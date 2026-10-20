@@ -50,7 +50,7 @@ def main():
                                                   num_workers=nw)
     print("using {} images for training, {} images for validation.".format(train_num,
                                                                            val_num))
-    net = FasterNet(num_classes=5)
+    net = FasterNet(num_classes=4)
 
     net.to(device)
     loss_function = nn.CrossEntropyLoss()
