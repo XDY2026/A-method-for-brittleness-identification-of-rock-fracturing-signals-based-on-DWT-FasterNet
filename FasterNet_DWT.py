@@ -27,8 +27,6 @@ class CoordinateAttention(nn.Module):
         x_w = self.conv_w(x_w)
         x_h = torch.sigmoid(x_h)
         x_w = torch.sigmoid(x_w)
-
-        # 加权
         out = x * x_h * x_w
         return out
 class DWT(nn.Module):
